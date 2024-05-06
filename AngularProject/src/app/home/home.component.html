@@ -1,0 +1,44 @@
+<div class="home-content">
+    <div class="nav-content">
+        <h1>Lorem <br> ipsum dolor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem quis, minima molestias aperiam
+            dolores excepturi ab vero dicta quibusdam quam nobis error. Sunt vero cupiditate facilis quia,
+            obcaecati omnis.Sunt vero cupiditate facilis quia,
+            obcaecati omnis.</p>
+        <a href="#" class="nav-btn">Join Now</a>
+    </div>
+</div>
+
+
+<div id="home-page-content">
+
+    <h4 class="h4-title">Latest Products</h4>
+    <hr class="hr-line">
+
+
+    <span *ngFor = "let p of products">
+        <a  class="product-block" *ngIf = "p.feature == true" [routerLink]="['/products', p.id]">
+            <div >
+                <img class="product-block-img" src="{{ url + p.image}}" alt="{{p.name}}">
+                <h6 class="product-block-title">{{p.name}}</h6>
+                <p class="product-block-price">&#8377;&nbsp;{{p.price}}</p>
+         
+            </div>
+        </a>
+    </span>
+    
+    <h2 style=" padding-top: 100px;" class="h4-title">Our Brands</h2>
+    <hr class="hr-line">
+
+
+    <div class="brands" *ngFor = "let b of brands"> 
+        <img src="{{url + b.image}}" alt="{{b.name}}">
+       
+        <!-- <img src="./img/brand-img/iphone-bg.png" alt="">
+        <img src="./img//brand-img/dell-bg.png" alt="">
+        <img src="./img/brand-img/iphone-bg.png" alt=""> -->
+    </div>
+
+</div>
+
+

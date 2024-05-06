@@ -1,0 +1,37 @@
+<div class="product-detail-content">
+    <div class="nav-content">
+        <h1>Product Details</h1>
+    </div>
+</div>
+
+
+<div id="product-details-page">
+    <!-- <p style="text-align: left;"><b>Home/product/Electronic</b></p> -->
+    <div class="product-detail-block"  *ngIf="product"> 
+        
+        <div class="product-detail-img">
+            <img src="{{url + product.image}}" class="img" alt="">
+            <!-- <div class="sub-img">
+                <img src="../../assets/images/product-1.jpg" class="product-sub-img" alt="">
+                <img src="../../assets/images/product-2.jpg" class="product-sub-img" alt="">
+                <img src="../../assets/images/product-3.jpg" class="product-sub-img" alt="">
+                <img src="../../assets/images/product-1.jpg" class="product-sub-img" alt="">
+            </div> -->
+        </div>
+        <div class="product-detail-info">
+            <p><b>Category:</b>&nbsp;&nbsp;{{product.category}} </p>
+            <hr>
+           
+            <h4 class="product-title">{{product.name}}</h4>
+            <h6 class="product-price">&#8377;&nbsp;{{product.price}}</h6>
+          
+            <h6>Product Details :</h6>
+            <p>{{product.description}}</p>
+        
+            <button class="product-btn">Buy Now</button>
+            <button class="product-btn">Add to Cart</button>
+        </div>
+
+    </div>
+</div>
+

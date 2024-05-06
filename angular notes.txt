@@ -1,0 +1,279 @@
+what is angular : 
+
+Angular is a popular open-source javascript web application framework maintained by Google.
+It is used for building client-side web applications, particularly single-page applications.
+Angular follows the Model-View-Controller (MVC) architectural pattern, where the application logic is separated from the UI.
+Angular provides a systematic structure for dynamic web apps.This structure allows for easier development, maintenance, and scalability of web applications.
+It also provides features like data binding, dependency injection, routing, and much more, which make it efficient for building complex web applications.
+
+
+differance between angular and angular js :
+
+angular js :
+contain 1.x version
+build in js
+controller architecture
+not support CLI, Lazy Loading, SEO, server side
+not use to develop mobile application
+
+angular:
+contain 2 to 13 version
+build in ts
+component architecture
+support CLI, Lazy Loading, SEO, server side
+use to develop mobile application
+
+
+why we use angular :
+
+angular reduces your effort on writing lenghty and time consumming code.
+Dynamic Web Applications: 
+Modularity and Reusability: 
+Two-way Data Binding: 
+Dependency Injection: 
+Cross-Platform Development: 
+Rich Ecosystem: 
+Official Support: 
+
+
+Key features of Angular include: 
+
+Components: Building blocks of Angular applications, encapsulating HTML templates, CSS styles, and TypeScript code.
+Directives: Extending HTML with custom attributes and tags to provide additional functionality.
+Services: Reusable components for sharing data or functionality across different parts of the application.
+Dependency Injection: A design pattern used for efficiently managing object creation and providing dependencies.
+Routing: Navigation between different views of the application without reloading the entire page.
+Forms: Powerful form-handling features, including form validation and data binding.
+HTTP Client: A built-in module for making HTTP requests to a server, commonly used for fetching data from APIs.
+
+
+what are directives in angular :
+
+In Angular, directives are a fundamental building block that allows you to extend the functionality of HTML.
+The purpose of Directives in Angular is to manipulate the DOM, be it by adding new elements to DOM or removing elements and even changing the appearance of the DOM elements.
+
+Component Directives :
+
+Attribute Directives : *ngClass, *ngStyle
+
+Structural Directives : *ngIf, *ngFor, *ngSwitch
+
+
+
+what is node module folder : 
+
+It is a folder that contain installed packages of project
+ 
+
+
+what is package.json in angular :
+
+It is json file in project that contain all referances of javascript file, details about project and dependencies of project with it's version.
+
+ 
+
+what is typeScript and why we need it ?
+
+TypeScript is a superset of JavaScript by adding types to the language. (because we need to define datatype with variables)
+It's developed and maintained by Microsoft and widely used for building large-scale web applications.
+It give nice oops programming environment.
+execution is :  tsc filename.ts   node filename.js
+
+
+what is angular CLI :
+
+It's command line interface or tools.
+using cli we can create angular project rather than starting from scratch.
+it increase the productivity of angular application.
+
+
+
+Explain Importance of Components and Modules :
+
+Components : -
+Reusability:
+Separation of Concerns: 
+Scalability: using Components by breaking down complex UIs into smaller, manageable pieces
+
+Modules :
+
+Encapsulation: Modules provide a way to encapsulate related components, directives, pipes, and services into cohesive units. This encapsulation prevents naming conflicts and organizes code in a logical and structured manner, making it easier to understand and maintain.
+
+Dependency Management: Modules define the dependency injection context for the components and services within them. By organizing code into modules, you can manage dependencies more effectively and ensure that components have access to the services they need.
+
+Lazy Loading: Angular's modular architecture allows you to lazy load modules, loading them on-demand as users navigate through the application. This can significantly improve the initial load time of your application by only loading the modules that are required for the current route.
+
+
+
+what is decorator in angular :
+
+In Angular, decorators are a fundamental part of the framework, used for various purposes such as defining components, services, modules, directives, and more. Decorators are functions that modify JavaScript classes.
+
+@Component : This decorator is used to define Angular components. Components are the building blocks of Angular applications, representing UI elements.
+
+@Injectable: Used to define services in Angular. Services are used to encapsulate reusable logic and data that can be shared across components.
+
+@NgModule: This decorator is used to define Angular modules. Modules help organize the application into cohesive blocks of functionality.
+
+@Directive: Used to create custom directives in Angular. Directives are used to add behavior to elements in the DOM.
+
+
+
+
+what is annotation or metadata in angular : 
+
+annotations or metadata is similar of decorator this are additional pieces of information that are attached to classes using decorators
+
+Metadata in Angular is typically defined using decorators like @Component, @Injectable, @NgModule, and @Directive.
+
+
+what are templates in angular :
+
+Templates is nothing but html view of an angular. defining in @component decorator.
+Two types of template : inline, seperate HTMl file.
+
+
+What is Data Binding in angular :
+
+Data binding in Angular is a powerful feature that allows you to bind data between your component's TypeScript code and its template (HTML). 
+
+Interpolation (One-Way Binding):  interpolation allows you to embed expressions in your template.  {{ }}
+
+Property Binding (One-Way Binding): Property binding allows you to set properties of HTML elements or Angular directives to values of component properties.  []
+
+Event Binding (One-Way Binding):  Event binding allows you to listen for events emitted by HTML elements, such as click.
+<button (click)="handleClick()">Click me</button>
+
+Two-Way Binding:  Two-way binding allows you to both display and update a component property based on user input in the template.
+<input [(ngModel)]="name">
+
+
+
+Explain architecture of angular : (8  points )
+
+Modules:
+Angular applications are modular and organized into NgModules.
+Each NgModule consolidates related code into functional sets; for example, components, directives, and services that work together to accomplish a specific purpose.
+Every Angular application has at least one root module, conventionally named AppModule.
+
+Components:
+Components are the building blocks of Angular applications.
+They encapsulate the application logic and UI elements into reusable and self-contained units.
+Each component typically consists of a TypeScript class that contains the component's logic and properties, along with an HTML template that defines the component's UI.
+
+Templates:
+Templates are HTML views that Angular uses to render the UI.
+Templates can include Angular directives and binding syntax to dynamically generate HTML content based on the component's properties and state.
+
+Directives:
+Directives are markers on a DOM element that tell Angular to do something to that element or its children.
+Angular provides built-in directives like ngFor, ngIf, and ngModel, and you can create custom directives as well.
+
+Services:
+Services are reusable components that provide functionality that's independent of any specific component.
+They are used to encapsulate and share data, business logic, or communication with external resources across different parts of the application.
+
+Dependency Injection (DI):
+Angular's DI system provides a way to create and manage dependencies between different parts of your application.
+DI allows you to inject dependencies (like services) into components, directives, and other services, making your code more modular and testable.
+
+Routing:
+Angular's Router module provides a way to navigate between different views or pages in a single-page application.
+It allows you to define routes, associate them with components, and handle navigation events.
+
+Metadata:
+Metadata is used to decorate classes and provide additional information to Angular's compiler.
+Decorators like @NgModule, @Component, and @Injectable are examples of metadata decorators used throughout Angular applications.
+
+
+Explain the term SPA :
+
+SPA stands for Single Page Application. 
+website that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from the server. 
+
+
+
+How to implement SPA in angular :
+Alternative 
+What is routing in angular :
+
+We can achive by routing in angular.
+
+Routing in Angular refers to the process of navigating between different views or pages within a single-page application (SPA). Angular's built-in router module provides a powerful and flexible way to define and manage application navigation.
+
+open "app-routing.module.ts." and Import the necessary Angular router modules (RouterModule, Routes) and define your routes.
+
+then add following routes :
+
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+];
+
+add the <router-outlet></router-outlet> directive in template (app.component.html).
+
+then give routerLink ( directive to navigate between different routes in your application )
+<a routerLink="/">Home</a>
+<a routerLink="/about">About</a>
+
+
+
+
+What is Lazy loading in angular : 
+
+it mean on demand loading. loading only necessary HTML, CSS and JS files so that you have better performance.
+
+
+
+How to implement lazy loading in angular :
+
+DIvid your project in modules (as per requirement)
+USe "loadChildren" to load module 
+
+
+
+Define services :
+
+services are a fundamental part of building applications. They are responsible for encapsulating reusable logic and data that can be shared across different parts of your application. 
+
+
+
+what is Dependency Injection in angular :
+
+Dependency Injection is an application design pattern.
+DI inject object via constractor rather than creating instance of object.
+
+
+how can implements Dependency injection in angular :
+
+Injecting Dependencies:
+Use constructor injection to declare the dependencies in the constructor of your component or service.
+constructor(private myService: MyService) { }
+
+Provider Registration:
+Ensure that Angular knows how to create the dependencies that you want to inject by registering them with Angular's dependency injection system.
+providers: [MyService]
+
+
+
+What is Benifit of Dependency injection : 
+
+DI hepls to decouple class dependencies, so that when you add new dependencies   you do not have change everywhere.
+
+
+
+Difference between Ng server and ng build :
+
+ng server builds in memory (RAM) and ng build builds on hard disk.
+so when you want to go for production use "ng build".
+
+
+Explain the --prod parameter in ng build :
+
+ng build --prod is compresses your js files, remove comments, creates GUIDs of your js files and make application production ready.
+
+
+
+
+
+

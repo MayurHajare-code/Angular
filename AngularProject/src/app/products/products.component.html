@@ -1,0 +1,36 @@
+
+<div class="product-content">
+    <div class="nav-content">
+        <h1>Our products</h1>
+    </div>
+</div>
+
+
+
+<div id="product-page">
+
+    <!-- <h4 class="h4-title">Our Products</h4>
+    <hr class="hr-line"> -->
+
+    <div class="sort">
+        <select name="product" id="product">
+            <option value="mobile">Sort By</option>
+            <option value="mobile">Mobile</option>
+            <option value="mobile">Headphone</option>
+            <option value="mobile">Watch</option>
+        </select>
+    <!-- </div>
+    <div class="filter"> -->
+        <button>Filter</button>
+    </div>
+
+
+
+    <a  class="product-block" *ngFor = "let p of products" [routerLink]="['/products', p.id]">
+        <img class="product-block-img" src="{{url + p.image}}" alt="p.name">
+        <h6 class="product-block-title">{{p.name}}</h6>
+        <p class="product-block-price">&#8377;&nbsp; {{p.price}}</p>
+    </a>
+
+
+</div>

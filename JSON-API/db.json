@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Apple IPhone 11 128GB White",
+      "price": "27,199",
+      "feature": true,
+      "image": "./images/product-1.jpg",
+      "category": "Electronic",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corporis atque adipisci sunt culpa consequuntur quos saepe aperiam officiis, ducimus hic expedita temporibus, nemo iusto veniam iure consequatur totam architecto"
+    },
+    {
+      "id": "2",
+      "name": "JBL 660NC Wireless Headphone",
+      "price": "14,000",
+      "feature": false,
+      "image": "./images/product-3.jpg",
+      "category": "Electronic",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corporis atque adipisci sunt culpa consequuntur quos saepe aperiam officiis, ducimus hic expedita temporibus, nemo iusto veniam iure consequatur totam architecto"
+    },
+    {
+      "id": "3",
+      "name": "Round Black Apple Led Watch",
+      "price": "499",
+      "feature": true,
+      "image": "./images/product-2.jpg",
+      "category": "Electronic",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi corporis atque adipisci sunt culpa consequuntur quos saepe aperiam officiis, ducimus hic expedita temporibus, nemo iusto veniam iure consequatur totam architecto"
+    }
+  ],
+  "User": [
+    {
+      "id": "1",
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "ConfirmPassword": "admin"
+    },
+    {
+      "id": "3a02",
+      "firstName": "mayur",
+      "lastName": "hajare",
+      "email": "mayurhajare333@gmail.com",
+      "password": "mayur",
+      "ConfirmPassword": "mayur"
+    },
+    {
+      "id": "a842",
+      "firstName": "Mayur",
+      "lastName": "Hajare",
+      "email": "mayurhajare333@gmail.com",
+      "password": "mayur",
+      "ConfirmPassword": "mayur"
+    }
+  ],
+  "contact": [
+    {
+      "id": "f309",
+      "name": "mayur",
+      "email": "mayurhajare333@gmail.com",
+      "message": "aaaaaaaaaaaaaaaaaaa"
+    }
+  ],
+  "brands": [
+    {
+      "name": "Apple ",
+      "image": "./images/iphone-bg.png",
+      "id": "3048"
+    },
+    {
+      "name": "Dell",
+      "image": "./images/dell-bg.png",
+      "id": "9496"
+    }
+  ]
+}

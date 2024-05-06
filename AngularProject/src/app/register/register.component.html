@@ -1,0 +1,26 @@
+<body id="body">
+
+    <form  method="get" class="login-form">
+        <h2>Sign Up </h2>
+
+        <p>It's free and takes few minute</p>
+        <input type="text" name="firstName" [(ngModel)] = "formData.firstName" placeholder="First Name" class="login-input" required>
+        <br>
+
+        <input type="text" name="lastName" [(ngModel)] = "formData.lastName" placeholder="Last Name" class="login-input" required>
+        <br>
+
+        <input type="email" name="email" [(ngModel)] = "formData.email" placeholder="Email" class="login-input" required>
+        <br>
+
+        <input type="password" name="password" [(ngModel)] = "formData.password" placeholder="Password" class="login-input" required>
+        <br>
+
+        <input type="password" name="ConfirmPassword" [(ngModel)] = "formData.ConfirmPassword" placeholder="Confirm Password" class="login-input" required>
+        <br>
+
+        <input class="btn" (click)="addNewUser()" type="submit">
+
+    </form>
+
+</body>
